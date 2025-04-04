@@ -65,7 +65,7 @@ pipeline {
              }
             steps {
             echo 'Creating the container...'
-            sh 'docker run -dit --name app-web -p 9100:80  -v /home/jenkins/app-web:/usr/share/nginx/html nginx'
+            sh 'docker run -dit --name app-web -p 9100:80  -v /var/jenkins_home/app-web:/usr/share/nginx/html nginx'
          
             }
         }
